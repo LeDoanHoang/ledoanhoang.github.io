@@ -372,6 +372,47 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Information
+--------------------------------------------------------------*/
+.information .infor h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
+}
+
+.information .infor ul {
+  list-style: none;
+  padding: 0;
+}
+
+.information .infor ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.information .infor ul strong {
+  margin-right: 10px;
+}
+
+.information .infor ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #149ddd;
+  line-height: 0;
+}
+
+.information .infor p:last-child {
+  margin-bottom: 0;
+}
+
+.imgradius{
+  border-radius: 10%;
+  height: 100%;
+}
+
+
+/*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
 .facts {
