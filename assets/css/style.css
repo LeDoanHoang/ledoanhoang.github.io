@@ -432,22 +432,22 @@ section {
   border-radius: 0;
 }
 
-.skills .content ul {
+.skills .progress ul {
   list-style: none;
   padding: 0;
 }
 
-.skills .content ul li {
+.skills .progress ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
-.skills .content ul strong {
+.skills .progress ul strong {
   margin-right: 10px;
 }
 
-.skills .content ul i {
+.skills .progress ul i {
   font-size: 16px;
   margin-right: 5px;
   color: #149ddd;
