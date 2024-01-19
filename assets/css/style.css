@@ -410,131 +410,228 @@ section {
   border-radius: 10%;
   height: 100%;
 }
-
-
 /*--------------------------------------------------------------
-# Facts
+# Teaching 
 --------------------------------------------------------------*/
-.facts {
-  padding-bottom: 30px;
-}
-
-.facts .count-box {
-  padding: 30px;
-  width: 100%;
-}
-
-.facts .count-box i {
-  display: block;
-  font-size: 44px;
-  color: #149ddd;
-  float: left;
-  line-height: 0;
-}
-
-.facts .count-box span {
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
+.teaching .teaching-title {
+  font-size: 26px;
   font-weight: 700;
-  color: #050d18;
-  margin-left: 60px;
-}
-
-.facts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #122f57;
-}
-
-.facts .count-box a {
-  font-weight: 600;
-  display: block;
   margin-top: 20px;
-  color: #122f57;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
-}
-
-.facts .count-box a:hover {
-  color: #1f5297;
-}
-
-/*--------------------------------------------------------------
-# Akills
---------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.skills .progress ul {
-  list-style: none;
-  padding: 0;
-}
-
-.skills .progress ul li {
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.skills .progress ul strong {
-  margin-right: 10px;
-}
-
-.skills .progress ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: #149ddd;
-  line-height: 0;
-}
-
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
   color: #050d18;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+/*-- */
+.teaching .teaching-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
 }
 
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
+.teaching .teaching-item-active {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
+.teaching .teaching-item-av {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
 }
 
-.barorange {
-  background-color: #f7b448;
+.teaching .teaching-item-stop {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
 }
 
-.bargreen {
-  background-color: #b7ce3e;
+/*-- */
+.teaching .teaching-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
 }
 
-.baryellow {
-  background-color: #fcd548;
+.teaching .teaching-item-active h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
 }
 
-.bargreendark{
-  background-color: green;
+.teaching .teaching-item-av h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.teaching .teaching-item-stop h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+/*-- */
+.teaching .teaching-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.teaching .teaching-item-active h5 {
+  font-size: 16px;
+  background: green;
+  padding: 5px 15px;
+  display: inline-block;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.teaching .teaching-item-av h5 {
+  font-size: 16px;
+  background: yellow;
+  padding: 5px 15px;
+  display: inline-block;
+  color: black;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.teaching .teaching-item-stop h5 {
+  font-size: 16px;
+  background: red;
+  padding: 5px 15px;
+  display: inline-block;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/*-- */
+.teaching .teaching-item ul {
+  padding-left: 20px;
+}
+
+.teaching .teaching-item-active ul {
+  padding-left: 20px;
+}
+
+.teaching .teaching-item-av ul {
+  padding-left: 20px;
+}
+
+.teaching .teaching-item-stop ul {
+  padding-left: 20px;
+}
+
+/*-- */
+.teaching .teaching-item ul li {
+  padding-bottom: 10px;
+}
+
+.teaching .teaching-item-active ul li {
+  padding-bottom: 10px;
+}
+
+.teaching .teaching-item-av ul li {
+  padding-bottom: 10px;
+}
+
+.teaching .teaching-item-stop ul li {
+  padding-bottom: 10px;
+}
+
+/*-- */
+.teaching .teaching-item:last-child {
+  padding-bottom: 0;
+}
+
+.teaching .teaching-item-active:last-child {
+  padding-bottom: 0;
+}
+
+.teaching .teaching-item-av:last-child {
+  padding-bottom: 0;
+}
+
+.teaching .teaching-item-stop:last-child {
+  padding-bottom: 0;
+}
+/*-- */
+.teaching .teaching-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+.teaching .teaching-item-active::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+.teaching .teaching-item-av::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+.teaching .teaching-item-stop::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
 }
 
 /*--------------------------------------------------------------
