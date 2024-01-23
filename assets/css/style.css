@@ -663,6 +663,24 @@ section {
 /*--------------------------------------------------------------
 # Students
 --------------------------------------------------------------*/
+.students pre.code {
+  white-space: pre-wrap;
+}
+.students pre.code::before {
+  counter-reset: listing;
+}
+.students pre.code code {
+  counter-increment: listing;
+}
+.students pre.code code::before {
+  content: counter(listing) ". ";
+  display: inline-block;
+  width: 8em;         /* now works */
+  padding-left: auto; /* now works */
+  margin-left: auto;  /* now works */
+  text-align: right;  /* now works */
+}
+
 .students .nav-tabs {
   border: 0;
 }
