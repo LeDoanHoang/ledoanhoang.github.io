@@ -64,8 +64,7 @@
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About Me/自己紹介</span></a></li>
           <li><a href="#teaching" class="nav-link scrollto"><i class="bx bxs-graduation"></i> <span>Teaching/教育</span></a></li>
           <li><a href="#research" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Research/研究</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#publication" class="nav-link scrollto"><i class="bx bxs-book"></i> <span>Publication/業績リスト</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact/接触</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -301,7 +300,7 @@
 	
 
 </div>
-</section><!-- End About Us Section -->
+</section><!-- End Research Section -->
  <!-- =**************************** Students Section ******************************************= -->
     <section id="students" class="students section-bg">
       <div class="container" data-aos="fade-up">
@@ -428,232 +427,140 @@
         </div>
 
       </div>
-    </section><!-- End Departments Section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	  
-
-	  
-
-	  
-
-
-    <!-- ======= Portfolio Section ======= -->
-    <!section id="portfolio" class="portfolio section-bg">
+    </section><!-- End Students Section -->
+    <!-- ===================================================== Publication Section ================================================= -->
+<section id="publication" class="publication">
       <div class="container">
 
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>The following screeshots are several projects that i have taken and also that i able to share to people. So if you want to know the specific thing about the project that i have taken, please contact me.</p>
+        <div class="section-title" data-aos="fade-up">
+          <h2>Publication/業績リスト</h2>
+          <p> class="text-primary">All IEEE publications: “© IEEE. Personal use of this material is permitted. 
+		  However, permission to reprint/republish this material for advertising or 
+		  promotional purposes or for creating new collective works for resale or redistribution to servers or lists, 
+		  or to reuse any copyrighted component of this work in other works must be obtained from the IEEE.”</p>
         </div>
 
-        <div class="row" data-aos="fade-up">
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-android">Android</li>
-              <li data-filter=".filter-ios">iOS</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-android">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <input type="text" hidden id="image" value="assets/img/portfolio/portfolio-1.jpg"/>
-              <input type="text" hidden id="title" value="Online Reservation"/>
-              <input type="text" hidden id="client" value="RS. Bhayangkara Denpasar"/>
-              <input type="text" hidden id="company" value="PT. Sanata System"/>
-              <input type="text" hidden id="desc" value="This project was developed by PT. Sanata System for its client RS. Bhayangkara Denpasar. This application will helps patiens to get health services."/>
-
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Rumah Sakit Bhayangkara, Denpasar"><i class="bx bx-plus"></i></a>
-                <a  onclick="testJS('title','image','client','company','desc')" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-ios">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <input type="text" hidden id="image2" value="assets/img/portfolio/portfolio-2.jpg"/>
-              <input type="text" hidden id="title2" value="anoMAN"/>
-              <input type="text" hidden id="client2" value="Udayana University"/>
-              <input type="text" hidden id="company2" value="PT. Sanata System"/>
-              <input type="text" hidden id="desc2" value="This project was developed by PT. Sanata System for its client Faculty of Doctor of Udayana University. This application will helps people to reporting if there any violation of covid19 health protocols."/>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App for reporting violation of covid19 health protocols"><i class="bx bx-plus"></i></a>
-                <a onclick="testJS('title2','image2','client2','company2','desc2')" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-android">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <input type="text" hidden id="image3" value="assets/img/portfolio/portfolio-3.jpg"/>
-              <input type="text" hidden id="title3" value="Online Reservation"/>
-              <input type="text" hidden id="client3" value="Dharma Kerti Hospital, Tabanan"/>
-              <input type="text" hidden id="company3" value="PT. Sanata System"/>
-              <input type="text" hidden id="desc3" value="This project was developed by PT. Sanata System for its client Dharma Kerti Hospital, Tabanan. This application will helps patiens to get health services via mobile application."/>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Online Reservation owned by Dharma Kerti Hospital"><i class="bx bx-plus"></i></a>
-                <a onclick="testJS('title3','image3','client3','company3','desc3')" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
-          </div> -->
+          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-ios">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <input type="text" hidden id="image5" value="assets/img/portfolio/portfolio-5.jpg"/>
-              <input type="text" hidden id="title5" value="Doctor's Application"/>
-              <input type="text" hidden id="client5" value="RSU. Bangli, Bali"/>
-              <input type="text" hidden id="company5" value="PT. Sanata System"/>
-              <input type="text" hidden id="desc5" value="This project was developed by PT. Sanata System for its client General Hospital of Bangli, Bali. This application special developed for doctors to check their schedules, their total patiens and also check their estimation"/>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aplication for Doctor owned by RSU. Bangli"><i class="bx bx-plus"></i></a>
-                <a onclick="testJS('title5','image5','client5','company5','desc5')" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-android">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <input type="text" hidden id="image6" value="assets/img/portfolio/portfolio-6.jpg"/>
-              <input type="text" hidden id="title6" value="Online Reservation"/>
-              <input type="text" hidden id="client6" value="RSU. Bangli, Bali"/>
-              <input type="text" hidden id="company6" value="PT. Sanata System"/>
-              <input type="text" hidden id="desc6" value="This project was developed by PT. Sanata System for its client General Hospital of Bangli, Bali. This application will helps patiens to get health services via mobile application both in Android and iOS."/>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Online Reservation owned by RSU. Bangli"><i class="bx bx-plus"></i></a>
-                <a onclick="testJS('title6','image6','client6','company6','desc6')" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-android">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <input type="text" hidden id="image7" value="assets/img/portfolio/portfolio-7.jpg"/>
-              <input type="text" hidden id="title7" value="Online Reservation"/>
-              <input type="text" hidden id="client7" value="RS. Bhayangkara Denpasar"/>
-              <input type="text" hidden id="company7" value="PT. Sanata System"/>
-              <input type="text" hidden id="desc7" value="This project was developed by PT. Sanata System for its client Surya Husadha, Denpasar. This application will helps patiens to get health services via android application."/>
               <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Online Reservation owned by Surya Husadha Hospital"><i class="bx bx-plus"></i></a>
-                <a onclick="testJS('title7','image7','client7','company7','desc7')" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <input type="text" hidden id="image8" value="assets/img/portfolio/portfolio-8.jpg"/>
-              <input type="text" hidden id="title8" value="Intaran Fashion Admin"/>
-              <input type="text" hidden id="client8" value="Intaran Fashion"/>
-              <input type="text" hidden id="company8" value="Freelance"/>
-              <input type="text" hidden id="desc8" value="This application was developed to help small business able to manage their inventory. This application was developed using Laravel 8 & MySQL."/>
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Intaran Fashion Admin"><i class="bx bx-plus"></i></a>
-                <a onclick="testJS('title8','image8','client8','company8','desc8')" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-android">
-            <div class="portfolio-wrap">
-              <input type="text" hidden id="image9" value="assets/img/portfolio/portfolio-9.jpg"/>
-              <input type="text" hidden id="title9" value="PS Club Indonesia"/>
-              <input type="text" hidden id="client9" value="Prima Servis"/>
-              <input type="text" hidden id="company9" value="Freelance"/>
-              <input type="text" hidden id="desc9" value="Prima Servis is an android application that provides job vacancy especially in hospitality field. This application was built using Kotlin."/>
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PS Club Indonesia"><i class="bx bx-plus"></i></a>
-                <a onclick="testJS('title9','image9','client9','company9','desc9')" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-android">
-            <div class="portfolio-wrap">
-              <input type="text" hidden id="image10" value="assets/img/portfolio/portfolio-10.jpg"/>
-              <input type="text" hidden id="title10" value="Rekam Medis Elektronik"/>
-              <input type="text" hidden id="client10" value="Surya Husadha Hospital"/>
-              <input type="text" hidden id="company10" value="PT. Sanata System"/>
-              <input type="text" hidden id="desc10" value="Rekam Medis Elektronik is a application that resume all patiens medical result such as vital sign, CPPT, etc. This application was developed using Java for Android."/>
-              <img src="assets/img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Rekam Medis Elektronik"><i class="bx bx-plus"></i></a>
-                <a onclick="testJS('title10','image10','client10','company10','desc10')" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-android">
-            <div class="portfolio-wrap">
-              <input type="text" hidden id="image11" value="assets/img/portfolio/portfolio-11.jpg"/>
-              <input type="text" hidden id="title11" value="Int-PRINT"/>
-              <input type="text" hidden id="client11" value="Intaran Fashion"/>
-              <input type="text" hidden id="company11" value="Freelance"/>
-              <input type="text" hidden id="desc11" value="This application was developed to help small business able to manage their inventory. This application was developed using Flutter."/>
-              <img src="assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-11.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="INT-PRINT"><i class="bx bx-plus"></i></a>
-                <a onclick="testJS('title11','image11','client11','company11','desc11')" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-android">
-            <div class="portfolio-wrap">
-              <input type="text" hidden id="image12" value="assets/img/portfolio/portfolio-12.jpg"/>
-              <input type="text" hidden id="title12" value="Math for Kids"/>
-              <input type="text" hidden id="client12" value="Student of University"/>
-              <input type="text" hidden id="company12" value="Freelance"/>
-              <input type="text" hidden id="desc12" value="This application was developed to help kids to learn math with happy. This application was developed using Java."/>
-              <img src="assets/img/portfolio/portfolio-12.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-12.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Math for Kids"><i class="bx bx-plus"></i></a>
-                <a onclick="testJS('title12','image12','client12','company12','desc12')" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -661,148 +568,41 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
-          </div> -->
+          </div>
 
         </div>
 
-      </div>
-    </section><!-- End Portfolio Section -->
+</div>
+</section><!-- End Publication Section -->
 
-    <!-- ======= Services Section ======= -->
-    <!section id="services" class="services">
-      <div class="container">
 
-        <div class="section-title">
-          <h2>Services</h2>
-          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-        </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Discussing</a></h4>
-            <p class="description">Disscuss about what application that want to develop. Let's break down the major features and the sub-features of the application</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Timeline</a></h4>
-            <p class="description">After got the major feature, let's disscuss about how long this application will developed.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Pricing</a></h4>
-            <p class="description">Provide a price to the project, and agree on how the project will continue after the first phase is complete.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="title"><a href="">Developing</a></h4>
-            <p class="description">Develop applications according to the features and agreements previously discussed.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="title"><a href="">Testing </a></h4>
-            <p class="description">Each feature that has been completed, will be tested together to maximize the features created.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-            <h4 class="title"><a href="">Publishing</a></h4>
-            <p class="description">After all is done, the application will be published to the market.</p>
-          </div>
-        </div>
 
-      </div>
-    </section><!-- End Services Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
 
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>The following are some comments from fellow programmers who have collaborated with me on a project.</p>
-        </div>
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Good understanding about what the requirements of the application that will be developed. Never underestimate any features even there's small feature that will be developed.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3><a href="https://debayus.mahas.my.id/" target="_blank">Bayu S.</a></h3>
-                <h4>Lead Software Engineer, PT. Sanata System</h4>
-              </div>
-            </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  This man have strong knowledge of these technologies like Flutter, Java for Android and Kotlin for Android. We also have a great collaboration when develop a health software system.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Daprin</h3>
-                <h4>ASP.NET Developer, TDS Indonesia</h4>
-              </div>
-            </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I've collaborated with this person. Very able to work in a team. All projects taken are always developed to the maximum. I think this man have good skills in Mobile field especially in Flutter.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Egan</h3>
-                <h4>PHP Developer, Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
 
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div> -->
-            <!-- </div> -->
-            <!-- End testimonial item -->
 
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div> -->
-            <!-- </div> -->
-            <!-- End testimonial item -->
 
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+	  
 
-      </div>
-    </section><!-- End Testimonials Section -->
+	  
+
+	  
+
+
 
     <!-- ===================================================== Contact Section ================================================= -->
     <section id="contact" class="contact">
