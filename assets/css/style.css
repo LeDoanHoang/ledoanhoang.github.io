@@ -635,6 +635,40 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Research
+--------------------------------------------------------------*/
+.research .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.research .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.research .content ul li {
+  padding-bottom: 10px;
+}
+
+.research .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #3fbbc0;
+}
+
+.research .content p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
