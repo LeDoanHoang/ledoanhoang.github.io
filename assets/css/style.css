@@ -1,6 +1,6 @@
 /**
-* Template Name: iPortfolio - v3.8.1
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Template Name: ipublication - v3.8.1
+* Template URL: https://bootstrapmade.com/ipublication-bootstrap-publication-websites-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -743,61 +743,55 @@ section {
   }
 }
 
-
-
-
-
-
-
 /*--------------------------------------------------------------
-# Portfolio
+# Publication
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.publication .publication-item {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.publication #publication-flters {
   padding: 0;
-  margin: 0 auto 35px auto;
+  margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
-  border-radius: 50px;
-  padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.publication #publication-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 10px 15px 8px 15px;
+  padding: 8px 15px 10px 15px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: #222222;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+  border-radius: 3px;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+.publication #publication-flters li:hover,
+.publication #publication-flters li.filter-active {
+  color: #fff;
+  background: #3498db;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.publication #publication-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.publication .publication-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  background: rgba(34, 34, 34, 0.6);
 }
 
-.portfolio .portfolio-wrap::before {
+.publication .publication-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(34, 34, 34, 0.6);
   position: absolute;
   left: 0;
   right: 0;
@@ -808,82 +802,104 @@ section {
   opacity: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
-  opacity: 1;
-  left: 0;
-  right: 0;
-  bottom: -60px;
-  z-index: 3;
-  position: absolute;
+.publication .publication-wrap img {
   transition: all ease-in-out 0.3s;
-  display: flex;
-  justify-content: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  font-size: 28px;
-  text-align: center;
-  background: rgba(20, 157, 221, 0.75);
-  transition: 0.3s;
-  width: 50%;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
-}
-
-.portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
-}
-
-.portfolio .portfolio-wrap:hover::before {
+.publication .publication-wrap .publication-info {
+  opacity: 0;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.publication .publication-wrap .publication-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.publication .publication-wrap .publication-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+.publication .publication-wrap .publication-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.publication .publication-wrap .publication-links a {
+  color: #fff;
+  margin: 0 5px 0 0;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.publication .publication-wrap .publication-links a:hover {
+  color: #3498db;
+}
+
+.publication .publication-wrap:hover::before {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-links {
+.publication .publication-wrap:hover img {
+  transform: scale(1.2);
+}
+
+.publication .publication-wrap:hover .publication-info {
   opacity: 1;
-  bottom: 0;
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# publication Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.publication-details {
   padding-top: 40px;
 }
 
-.portfolio-details .portfolio-details-slider img {
+.publication-details .publication-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.publication-details .publication-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.publication-details .publication-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #3498db;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+.publication-details .publication-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #3498db;
 }
 
-.portfolio-details .portfolio-info {
+.publication-details .publication-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+  box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
 }
 
-.portfolio-details .portfolio-info h3 {
+.publication-details .publication-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -891,29 +907,36 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.portfolio-details .portfolio-info ul {
+.publication-details .publication-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.publication-details .publication-info ul li+li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.publication-details .publication-description {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.publication-details .publication-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.publication-details .publication-description p {
   padding: 0;
 }
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Services
