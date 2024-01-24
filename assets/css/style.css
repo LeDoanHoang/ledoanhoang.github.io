@@ -1129,14 +1129,14 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Award
+# Awards
 --------------------------------------------------------------*/
-.award .award-carousel,
-.award .award-slider {
+.awards .awards-carousel,
+.awards .awards-slider {
   overflow: hidden;
 }
 
-.award .testimonial-item {
+.awards .award-item {
   box-sizing: content-box;
   padding: 30px 30px 0 30px;
   margin: 30px 15px;
@@ -1146,56 +1146,56 @@ section {
   background: #fff;
 }
 
-.award .testimonial-item .testimonial-img {
+.awards .award-item .award-img {
   width: 90px;
   border-radius: 50%;
   border: 4px solid #fff;
   margin: 0 auto;
 }
 
-.award .testimonial-item h3 {
+.awards .award-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #111;
 }
 
-.award .testimonial-item h4 {
+.awards .award-item h4 {
   font-size: 14px;
   color: #999;
   margin: 0;
 }
 
-.award .testimonial-item .quote-icon-left,
-.award .testimonial-item .quote-icon-right {
+.awards .award-item .quote-icon-left,
+.awards .award-item .quote-icon-right {
   color: #00cc95;
   font-size: 26px;
 }
 
-.award .testimonial-item .quote-icon-left {
+.awards .award-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.award .testimonial-item .quote-icon-right {
+.awards .award-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
   top: 10px;
 }
 
-.award .testimonial-item p {
+.awards .award-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
 }
 
-.award .swiper-pagination {
+.awards .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.award .swiper-pagination .swiper-pagination-bullet {
+.awards .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -1203,7 +1203,7 @@ section {
   border: 1px solid #009970;
 }
 
-.award .swiper-pagination .swiper-pagination-bullet-active {
+.awards .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #009970;
 }
 
