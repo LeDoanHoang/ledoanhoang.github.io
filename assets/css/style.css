@@ -1112,46 +1112,53 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .nav-tabs {
-  border: 0;
-  margin-bottom: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
+/* Services Section */
+.services {
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 60px 0;
 }
 
-.services .nav-link {
-  border: 2px solid #d4d6df;
-  padding: 20px;
-  margin: 10px;
-  transition: all 0.3s ease-in-out;
+.services .section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
   color: #2a2c39;
+  margin-bottom: 40px;
+}
+
+/* Tab Navigation */
+.services .nav-pills .nav-item {
+  margin: 10px;
+}
+
+.services .nav-pills .nav-link {
   background-color: #fff;
+  border: 2px solid #d4d6df;
   border-radius: 12px;
+  padding: 15px 20px;
+  color: #2a2c39;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  min-width: 180px;
   text-align: center;
-  min-height: 120px;
 }
 
 .services .nav-link i {
-  margin-bottom: 10px;
-  font-size: 40px;
+  font-size: 1.5rem;
   color: #ef6603;
+  margin-right: 10px;
   transition: transform 0.3s ease;
 }
 
-.services .nav-link h4 {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0;
+.services .nav-link span {
+  font-size: 1rem;
+  font-weight: 600;
   color: #333;
 }
 
 .services .nav-link:hover {
-  color: #ef6603;
   background-color: #fdf3ec;
   border-color: #ef6603;
   transform: translateY(-3px);
@@ -1163,28 +1170,70 @@ section {
 
 .services .nav-link.active {
   background: linear-gradient(145deg, #ef6603, #e05d02);
+  border: 3px solid #ef6603;
   color: #fff;
-  border-color: #ef6603;
-  box-shadow: 0 8px 16px rgba(239, 102, 3, 0.2);
+  box-shadow: 0 8px 16px rgba(239, 102, 3, 0.3);
+  transform: scale(1.05);
 }
 
 .services .nav-link.active i,
-.services .nav-link.active h4 {
+.services .nav-link.active span {
   color: #fff;
 }
 
+/* Tab Content */
+.services .tab-content {
+  margin-top: 40px;
+}
+
+.services .tab-pane h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2a2c39;
+  margin-bottom: 20px;
+}
+
+.services .tab-pane .list-group-item {
+  border: none;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+}
+
+.services .tab-pane .list-group-item i {
+  font-size: 1.25rem;
+  color: #ef6603;
+  margin-right: 12px;
+  margin-top: 4px;
+}
+
+.services .tab-pane a {
+  color: #ef6603;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.services .tab-pane a:hover {
+  color: #e05d02;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .services .nav-link {
-    padding: 15px;
+    padding: 12px 15px;
+    min-width: auto;
   }
-
   .services .nav-link i {
-    font-size: 32px;
-    margin-bottom: 5px;
+    font-size: 1.25rem;
+    margin-right: 8px;
   }
-
-  .services .nav-link h4 {
-    font-size: 14px;
+  .services .nav-link span {
+    font-size: 0.9rem;
+  }
+  .services .tab-pane .list-group-item {
+    font-size: 1rem;
   }
 }
 
@@ -1192,73 +1241,19 @@ section {
   .services .nav-link {
     flex-direction: row;
     padding: 10px;
-    min-height: auto;
   }
-
   .services .nav-link i {
-    font-size: 24px;
-    margin: 0 10px 0 0;
+    font-size: 1rem;
+    margin-right: 6px;
   }
-
-  .services .nav-link h4 {
-    font-size: 13px;
+  .services .nav-link span {
+    font-size: 0.85rem;
+  }
+  .services .tab-pane .list-group-item {
+    font-size: 0.95rem;
+    text-indent: 0;
   }
 }
-
-.services .tab-content {
-  margin-top: 30px;
-}
-
-.services .tab-pane h3 {
-  font-weight: 700;
-  font-size: 24px;
-  color: #2a2c39;
-  margin-top: 20px;
-}
-
-.services .tab-pane ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0;
-}
-
-.services .tab-pane ul li {
-  padding-bottom: 10px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.services .tab-pane ul i {
-  font-size: 20px;
-  padding-right: 8px;
-  color: #ef6603;
-}
-
-.services .tab-pane p {
-  margin: 0 0 10px 0;
-  text-indent: 40px;
-}
-
-.services .tab-pane p:last-child {
-  margin-bottom: 0;
-}
-
-.services .nav-tabs .nav-item {
-  display: flex;
-  justify-content: center;
-}
-
-.services .nav-tabs .nav-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.services .nav-link i {
-  font-size: 30px;
-  margin-bottom: 8px;
-}
-
 /*--------------------------------------------------------------
 # Awards
 --------------------------------------------------------------*/
