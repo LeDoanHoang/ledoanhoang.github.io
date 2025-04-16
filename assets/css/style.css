@@ -1143,11 +1143,11 @@ section {
   transition: transform 0.3s ease;
 }
 
-.services .nav-link h4 {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0;
+.services .nav-link span {
+  font-size: 14px;
+  font-weight: 600;
   color: #333;
+  white-space: nowrap;
 }
 
 .services .nav-link:hover {
@@ -1169,7 +1169,7 @@ section {
 }
 
 .services .nav-link.active i,
-.services .nav-link.active h4 {
+.services .nav-link.active span {
   color: #fff;
 }
 
@@ -1183,8 +1183,8 @@ section {
     margin-bottom: 5px;
   }
 
-  .services .nav-link h4 {
-    font-size: 14px;
+  .services .nav-link span {
+    font-size: 13px;
   }
 }
 
@@ -1200,7 +1200,7 @@ section {
     margin: 0 10px 0 0;
   }
 
-  .services .nav-link h4 {
+  .services .nav-link span {
     font-size: 13px;
   }
 }
@@ -1242,8 +1242,6 @@ section {
 .services .tab-pane p:last-child {
   margin-bottom: 0;
 }
-
-
 /*--------------------------------------------------------------
 # Awards
 --------------------------------------------------------------*/
