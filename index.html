@@ -29,6 +29,22 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Newly Added -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+
+<!-- For services -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, once: true });</script>
+	
   <!-- =======================================================
   * Template Name: iPortfolio - v3.8.1
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -899,123 +915,265 @@
     <!-- ===================================================== Services ================================================= -->
 <section id="services" class="services">
   <div class="container">
-    <div class="section-title" data-aos="fade-up">
+    <!-- Section Title -->
+    <div class="section-title text-center" data-aos="fade-up">
       <h2>Service/サービス</h2>
     </div>
 
-    <ul class="nav nav-tabs row d-flex">
-      <li class="nav-item col-6 col-md-3" data-aos="zoom-in">
-        <a class="nav-link active show" data-bs-toggle="tab" href="#tab-11">
-          <i class="ri-leadership-line"></i>
-          <h4 class="d-none d-md-block"><strong>Leadership Activities</strong></h4>
-          <span class="d-block d-md-none"><i class="ri-leadership-line"></i></span>
-        </a>
+    <!-- Tab Navigation -->
+    <ul class="nav nav-pills justify-content-center mb-4 flex-wrap" id="servicesTabs" role="tablist">
+      <li class="nav-item" role="presentation" data-aos="zoom-in">
+        <button class="nav-link active" id="leadership-tab" data-bs-toggle="pill" data-bs-target="#leadership" type="button" role="tab" aria-controls="leadership" aria-selected="true">
+          <i class="bi bi-person-gear"></i>
+          <span>Leadership Activities</span>
+        </button>
       </li>
-      <li class="nav-item col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
-        <a class="nav-link" data-bs-toggle="tab" href="#tab-22">
-          <i class="ri-pencil-line"></i>
-          <h4 class="d-none d-md-block"><strong>Editorial Activities</strong></h4>
-          <span class="d-block d-md-none"><i class="ri-pencil-line"></i></span>
-        </a>
+      <li class="nav-item" role="presentation" data-aos="zoom-in" data-aos-delay="100">
+        <button class="nav-link" id="editorial-tab" data-bs-toggle="pill" data-bs-target="#editorial" type="button" role="tab" aria-controls="editorial" aria-selected="false">
+          <i class="bi bi-pencil-square"></i>
+          <span>Editorial Activities</span>
+        </button>
       </li>
-      <li class="nav-item col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
-        <a class="nav-link" data-bs-toggle="tab" href="#tab-33">
-          <i class="ri-tech-line"></i>
-          <h4 class="d-none d-md-block"><strong>Technical Member</strong></h4>
-          <span class="d-block d-md-none"><i class="ri-tech-line"></i></span>
-        </a>
+      <li class="nav-item" role="presentation" data-aos="zoom-in" data-aos-delay="200">
+        <button class="nav-link" id="technical-tab" data-bs-toggle="pill" data-bs-target="#technical" type="button" role="tab" aria-controls="technical" aria-selected="false">
+          <i class="bi bi-cpu"></i>
+          <span>Technical Member</span>
+        </button>
       </li>
-      <li class="nav-item col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
-        <a class="nav-link" data-bs-toggle="tab" href="#tab-44">
-          <i class="ri-review-line"></i>
-          <h4 class="d-none d-md-block"><strong>Review for</strong></h4>
-          <span class="d-block d-md-none"><i class="ri-review-line"></i></span>
-        </a>
+      <li class="nav-item" role="presentation" data-aos="zoom-in" data-aos-delay="300">
+        <button class="nav-link" id="review-tab" data-bs-toggle="pill" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">
+          <i class="bi bi-journal-check"></i>
+          <span>Review for</span>
+        </button>
       </li>
     </ul>
 
-    <div class="tab-content" data-aos="fade-up">
-      <!-- Leadership Activities Tab -->
-      <div class="tab-pane active show" id="tab-11">
-        <div class="row">
-          <div class="col-lg-12 mt-3 mt-lg-0">
-            <ul>
-              <p style="text-indent: 40px">- <strong>President</strong>, <a href="https://u-aizu.ac.jp/en/curriculum/saisua/"> <u>SAISUA</u></a> (May 2024 - Present)</p>
-              <p style="text-indent: 40px">- <strong>Chair</strong>, <a href="https://web-ext.u-aizu.ac.jp/conference/ieeeuoas/"> <u>IEEE University of Aizu Student Branch</u></a> (Apr. 2020 - Mar. 2021)</p>
-              <p style="text-indent: 40px">- <strong>Committee Member</strong>, <a href="https://ieee-jp.org/section/sendai/AG/yp/members2020.html"> <u>IEEE Sendai Young Professionals Affinity Group</u></a> (Apr. 2020 - Mar. 2021)</p>
-              <p style="text-indent: 40px">- <strong>Laboratory Manager</strong>, <a href="https://web-ext.u-aizu.ac.jp/labs/ce-cc/"> <u>Computer Communications Lab,</u></a> UoA, Japan (Apr. 2018 - Sept. 2022)</p>
-              <p style="text-indent: 40px">- <strong>Vice Chair</strong>, <a href="https://web-ext.u-aizu.ac.jp/conference/ieeeuoas/"> <u>IEEE University of Aizu Student Branch</u></a> (Apr. 2019 - Mar. 2020 )</p>
-            </ul>
+    <!-- Tab Content -->
+    <div class="tab-content" id="servicesTabsContent" data-aos="fade-up">
+      <!-- Leadership Activities -->
+      <div class="tab-pane fade show active" id="leadership" role="tabpanel" aria-labelledby="leadership-tab">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="list-group">
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-star-fill"></i>
+                <span><strong>President</strong>, <a href="https://u-aizu.ac.jp/en/curriculum/saisua/">SAISUA</a> (May 2024 - Present)</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="150">
+                <i class="bi bi-star-fill"></i>
+                <span><strong>Chair</strong>, <a href="https://web-ext.u-aizu.ac.jp/conference/ieeeuoas/">IEEE University of Aizu Student Branch</a> (Apr. 2020 - Mar. 2021)</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-star-fill"></i>
+                <span><strong>Committee Member</strong>, <a href="https://ieee-jp.org/section/sendai/AG/yp/members2020.html">IEEE Sendai Young Professionals Affinity Group</a> (Apr. 2020 - Mar. 2021)</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="250">
+                <i class="bi bi-star-fill"></i>
+                <span><strong>Laboratory Manager</strong>, <a href="https://web-ext.u-aizu.ac.jp/labs/ce-cc/">Computer Communications Lab</a>, UoA, Japan (Apr. 2018 - Sept. 2022)</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-star-fill"></i>
+                <span><strong>Vice Chair</strong>, <a href="https://web-ext.u-aizu.ac.jp/conference/ieeeuoas/">IEEE University of Aizu Student Branch</a> (Apr. 2019 - Mar. 2020)</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Editorial Activities Tab -->
-      <div class="tab-pane" id="tab-22">
-        <div class="row">
-          <div class="col-lg-12 mt-3 mt-lg-0">
-            <ul>
-              <p style="text-indent: 40px">- <strong>Regional Editor</strong>, <a href="https://scifiniti.com/journals/commoptics-connect/editorial-board"> <u>Comm&Optics Connect"</u></a> Scifiniti, 2024-Present</p>
-              <p style="text-indent: 40px">- <strong>Lead Guest Editor</strong>, <a href="https://www.mdpi.com/journal/photonics/special_issues/W40KA1VR92"> <u>Special Issue "Optical Wireless Communications and Applications"</u></a> Photonics, 2022
-                <a href="https://drive.google.com/file/d/1gYI6pp6h7-AdATLb81EDrlHk1Qe2sTIk/view?usp=sharing"> [<u>Certificate</u>]</a>
-              </p>
-              <p style="text-indent: 40px">- <strong>Guest Editor</strong>, <a href="https://www.mdpi.com/journal/electronics/special_issues/VHOMM4O53F"> <u>Special Issue, "Machine Learning and Deep Learning Based Pattern Recognition"</u></a> Electronics, 2022
-                <a href="https://drive.google.com/file/d/1gYT0Jsn3fm-v7V_AqiRWtmE6t0BYp3tM/view?usp=sharing"> [<u>Certificate</u>]</a>
-              </p>
-            </ul>
+      <!-- Editorial Activities -->
+      <div class="tab-pane fade" id="editorial" role="tabpanel" aria-labelledby="editorial-tab">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="list-group">
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-book"></i>
+                <span><strong>Regional Editor</strong>, <a href="https://scifiniti.com/journals/commoptics-connect/editorial-board">Comm&Optics Connect</a>, Scifiniti, 2024-Present</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="150">
+                <i class="bi bi-book"></i>
+                <span><strong>Lead Guest Editor</strong>, <a href="https://www.mdpi.com/journal/photonics/special_issues/W40KA1VR92">Special Issue "Optical Wireless Communications and Applications"</a>, Photonics, 2022 [<a href="https://drive.google.com/file/d/1gYI6pp6h7-AdATLb81EDrlHk1Qe2sTIk/view?usp=sharing">Certificate</a>]</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-book"></i>
+                <span><strong>Guest Editor</strong>, <a href="https://www.mdpi.com/journal/electronics/special_issues/VHOMM4O53F">Special Issue, "Machine Learning and Deep Learning Based Pattern Recognition"</a>, Electronics, 2022 [<a href="https://drive.google.com/file/d/1gYT0Jsn3fm-v7V_AqiRWtmE6t0BYp3tM/view?usp=sharing">Certificate</a>]</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Technical Member Tab -->
-      <div class="tab-pane" id="tab-33">
-        <div class="row">
-          <div class="col-lg-12 mt-3 mt-lg-0">
-            <h3>Organizing Committee</h3>
-            <ul>
-              <p style="text-indent: 40px">- <strong>Organizing Chair</strong>, <a href="https://atc-conf.org/special-sessions/revolutionizing-connectivity-of-6g-wireless-communications-from-connected-things-to"> <u>Special Session on Revolutionizing Connectivity of 6G Wireless Communications from Connected Things to Connected Intelligent</u></a> ATC conference, Vietnam 2024</p>
-              <p style="text-indent: 40px">- <strong>Organizing Committee Chair</strong>, <a href="https://uoa-pgf.github.io/"> <u>UoA Postgraduate Forum</u></a> Aizu-Wakamatsu, Japan 2024</p>
-              <p style="text-indent: 40px">- <strong>Secretary</strong>, <a href="https://u-aizu.ac.jp/~pengli/racs2022-pf/index.html?fbclid=IwAR2fD8NI2QeuXfIObKpxbqW3YsbZ5HMZPMfP0M4sQW1UTR3dmIQ78HUGRfU"> <u>Postgraduate Forum of ACM RACS 2022</u></a> Aizu-Wakamatsu, Japan 2022</p>
-            </ul>
-            <h3>Session Chair</h3>
-            <ul>
-              <p style="text-indent: 40px">- <strong>Network Architecture</strong>, <a href="https://apwcs2024.org/home.html"> <u>IEEE APWCS</u></a> Singapore, 2024</p>
-              <p style="text-indent: 40px">- <strong>Network session</strong>, <a href="https://atc-conf.org/"> <u>IEEE ATC</u></a> Danang Vietnam, 2023</p>
-            </ul>
+      <!-- Technical Member -->
+      <div class="tab-pane fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h3 class="mb-4" data-aos="fade-up">Organizing Committee</h3>
+            <div class="list-group mb-4">
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-people"></i>
+                <span><strong>Organizing Chair</strong>, <a href="https://atc-conf.org/special-sessions/revolutionizing-connectivity-of-6g-wireless-communications-from-connected-things-to">Special Session on 6G Wireless Communications</a>, ATC Conference, Vietnam 2024</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="150">
+                <i class="bi bi-people"></i>
+                <span><strong>Organizing Committee Chair</strong>, <a href="https://uoa-pgf.github.io/">UoA Postgraduate Forum</a>, Aizu-Wakamatsu, Japan 2024</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-people"></i>
+                <span><strong>Organizing Committee Chair</strong>, <a href="https://uoa-pgf.github.io/">UoA Postgraduate Forum</a>, Aizu-Wakamatsu, Japan 2023</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="250">
+                <i class="bi bi-people"></i>
+                <span><strong>Secretary</strong>, <a href="https://u-aizu.ac.jp/~pengli/racs2022-pf/index.html">Postgraduate Forum of ACM RACS 2022</a>, Aizu-Wakamatsu, Japan 2022</span>
+              </div>
+            </div>
+            <h3 class="mb-4" data-aos="fade-up">Session Chair</h3>
+            <div class="list-group mb-4">
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-mic"></i>
+                <span><strong>Network Architecture</strong>, <a href="https://apwcs2024.org/home.html">IEEE APWCS</a>, Singapore, 2024</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="150">
+                <i class="bi bi-mic"></i>
+                <span><strong>Network Session</strong>, <a href="https://atc-conf.org/">IEEE ATC</a>, Danang, Vietnam, 2023</span>
+              </div>
+            </div>
+            <h3 class="mb-4" data-aos="fade-up">Technical Program Committee Member</h3>
+            <div class="list-group">
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-gear"></i>
+                <span><a href="https://atc-conf.org/">IEEE ATC</a>, HoChiMinh, Vietnam, 2024</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="150">
+                <i class="bi bi-gear"></i>
+                <span><a href="https://apcc2024.org/">IEEE APCC</a>, Surabaya, Indonesia, 2024</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-gear"></i>
+                <span><a href="https://apcc2023.org/">IEEE APCC</a>, Sydney, Australia, 2023</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="250">
+                <i class="bi bi-gear"></i>
+                <span><a href="https://atc-conf.org/">IEEE ATC</a>, Danang, Vietnam, 2023</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-gear"></i>
+                <span><a href="https://globecom2023.ieee-globecom.org/">IEEE GLOBECOM</a>, Kuala Lumpur, Malaysia, 2023</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="350">
+                <i class="bi bi-gear"></i>
+                <span><a href="https://www.asse.net/index.html">ASSE</a>, Aizu-Wakamatsu, Japan, 2023</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-gear"></i>
+                <span><a href="https://www.iaria.org/conferences2023/ComICONS23.html">ICONS</a>, Venice, Italy, 2023</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="450">
+                <i class="bi bi-gear"></i>
+                <span><a href="https://www.iaria.org/conferences2022/ICONS22.html">ICONS</a>, Barcelona, Spain, 2022</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-gear"></i>
+                <span><a href="https://www.iaria.org/conferences2021/ICONS21.html">ICONS</a>, Porto, Portugal, 2021</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="550">
+                <i class="bi bi-gear"></i>
+                <span><a href="https://www.iaria.org/conferences2020/ICONS20.html">ICONS</a>, Lisbon, Portugal, 2020</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="600">
+                <i class="bi bi-gear"></i>
+                <span>Vietnam-Japan Scientific Exchange (VJSE) Meeting, Sendai, Japan, 2018</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Review for Tab -->
-      <div class="tab-pane" id="tab-44">
-        <div class="row">
-          <div class="col-lg-12 mt-3 mt-lg-0">
-            <h3>Research Funds</h3>
-            <ul>
-              <p style="text-indent: 40px">- <a href="https://nafosted.gov.vn/en/"> <strong><u>NAFOSTED</u></strong></a> (Vietnam), 2023</p>
-              <p style="text-indent: 40px">- <a href="https://www.nwo.nl/calls/open-technologieprogramma-2023"> <strong><u>Dutch Research Council</u></strong></a> (Netherlands), 2023</p>
-            </ul>
-            <h3>Journals</h3>
-            <ul>
-              <p style="text-indent: 40px">- <strong>IEEE Journals:</strong> IEEE Transactions on Wireless Communications, IEEE Transactions on Vehicular Technology, IEEE Transactions on Aerospace and Electronic Systems, IEEE Communication Letters, IEEE Photonics Journal, IEEE Wireless Communications Magazine, IEEE Access, IEEE Open Journal of the Communications Society</p>
-              <p style="text-indent: 40px">- <strong>Optica Journals:</strong> Optica Optics Letters, Optica Applied Optics, Optica Optics Express, IEEE/Optica Journal of Optical Communication and Networking</p>
-              <p style="text-indent: 40px">- <strong>IET/Wiley Journals:</strong> Electronics Letters, International Journal of Communication Systems</p>
-            </ul>
-            <h3>Conferences</h3>
-            <ul>
-              <p style="text-indent: 40px">- IEEE Global Communications Conference (Globecom), Kuala Lumpur, Malaysia, 4-8 December, 2023</p>
-              <p style="text-indent: 40px">- International Conference On Advanced Technologies For Communications (ATC), October 2022, Hanoi, Vietnam</p>
-            </ul>
+      <!-- Review for -->
+      <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h3 class="mb-4" data-aos="fade-up">Research Funds</h3>
+            <div class="list-group mb-4">
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-wallet"></i>
+                <span><a href="https://nafosted.gov.vn/en/">NAFOSTED</a> (Vietnam), 2023</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="150">
+                <i class="bi bi-wallet"></i>
+                <span><a href="https://www.nwo.nl/calls/open-technologieprogramma-2023">Dutch Research Council</a> (Netherlands), 2023</span>
+              </div>
+            </div>
+            <h3 class="mb-4" data-aos="fade-up">Journals</h3>
+            <div class="list-group mb-4">
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-book"></i>
+                <span><strong>IEEE Journals:</strong> IEEE Transactions on Wireless Communications, IEEE Transactions on Vehicular Technology, IEEE Transactions on Aerospace and Electronic Systems, IEEE Communication Letters, IEEE Photonics Journal, IEEE Wireless Communications Magazine, IEEE Access, IEEE Open Journal of the Communications Society</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="150">
+                <i class="bi bi-book"></i>
+                <span><strong>Optica Journals:</strong> Optica Optics Letters, Optica Applied Optics, Optica Optics Express, IEEE/Optica Journal of Optical Communication and Networking</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-book"></i>
+                <span><strong>IET/Wiley Journals:</strong> Electronics Letters, International Journal of Communication Systems</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="250">
+                <i class="bi bi-book"></i>
+                <span><strong>MDPI Journals:</strong> Electronics, Applied Science, Sensors, Network, Photonics, Signals, Remote Sensing, Future Internet, Entropy</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-book"></i>
+                <span><strong>Elsevier Journals:</strong> Optics Communications, Reliability Engineering & System Safety</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="350">
+                <i class="bi bi-book"></i>
+                <span><strong>Springer Journals:</strong> Optical and Quantum Electronics</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-book"></i>
+                <span><strong>Other Journals:</strong> Journal of Modern Optics, Journal of Optical Communications</span>
+              </div>
+            </div>
+            <h3 class="mb-4" data-aos="fade-up">Conferences</h3>
+            <div class="list-group">
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-calendar-event"></i>
+                <span>IEEE Global Communications Conference (Globecom), Kuala Lumpur, Malaysia, 4-8 December, 2023</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="150">
+                <i class="bi bi-calendar-event"></i>
+                <span>International Conference on Advanced Technologies for Communications (ATC), Hanoi, Vietnam, October 2022</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-calendar-event"></i>
+                <span>IEEE/IET International Symposium on Communication Systems, Network, and Digital Signal Processing, Portugal, July 2022</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="250">
+                <i class="bi bi-calendar-event"></i>
+                <span>IEEE International Conference on Communications (ICC), Seoul, South Korea, May 2022</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-calendar-event"></i>
+                <span>International Conference on Electrical, Computer and Energy Technologies, South Africa, 9-10 December, 2021</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="350">
+                <i class="bi bi-calendar-event"></i>
+                <span>International Conference on Systems (ICONS), Porto, Portugal, 18-22 April, 2021</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-calendar-event"></i>
+                <span>International Symposium on Automation, Information and Computing (ISAIC), Beijing, China, 2-4 December, 2020</span>
+              </div>
+              <div class="list-group-item" data-aos="fade-up" data-aos-delay="450">
+                <i class="bi bi-calendar-event"></i>
+                <span>International Conference on Systems (ICONS), Lisbon, Portugal, 23-27 February, 2020</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
-
-
-
     <!-- ===================================================== Awards ================================================= -->
 <section id="testimonials" class="testimonials section-bg">
   <div class="container">
