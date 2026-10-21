@@ -1689,12 +1689,3 @@ section {
     padding-right: 20px 15px;
   }
 }
-
-/* Ensure inactive publication tabs do not occupy space */
-#publication .tab-content > .tab-pane {
-    display: none !important;
-}
-
-#publication .tab-content > .tab-pane.active {
-    display: block !important;
-}
