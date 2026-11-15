@@ -9,8 +9,8 @@
 
   // ---- Menu: [file, hash, icon, label] -------------------------------
   var MENU = [
-    ["index.html",        "#home",  "bx bx-home",           "Home/ホーム"],
-    ["index.html",        "#news",  "bx bx-news",           "News/ニュース"],
+    ["index.html",        "",       "bx bx-home",           "Home/ホーム"],
+    ["news.html",         "",       "bx bx-news",           "News/ニュース"],
     ["teaching.html",     "",       "bx bxs-graduation",    "Teaching/教育"],
     ["supervision.html",  "",       "bx bx-group",          "Supervision/学生指導"],
     ["research.html",     "",       "bx bx-book-content",   "Research/研究"],
@@ -41,7 +41,7 @@
     '    <div class="profile">\n' +
     '      <img src="assets/img/profile-img.jpeg" alt="" class="img-fluid rounded-circle">\n' +
     '      <h1 class="text-light"><a href="index.html">LE Doan Hoang</a></h1>\n' +
-    '      <p class="text-center"><a href="index.html">Associate Professor/准教授 University of Aizu/会津大学</a></p>\n' +
+    '      <p class="profile-title text-center"><a href="index.html">Associate Professor/准教授<br>University of Aizu/会津大学</a></p>\n' +
     '      <div class="social-links mt-3 text-center">\n' +
     '        <a href="https://u-aizu.ac.jp/research/faculty/detail?cd=90154&lng=en" class="school"><i class="bx bxs-school"></i></a>\n' +
     '        <a href="https://scholar.google.com/citations?user=3_oH7I4AAAAJ&hl=en" class="google"><i class="bx bxl-google"></i></a>\n' +
