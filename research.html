@@ -73,83 +73,54 @@
 
       <!-- ================= Research Interests ================= -->
       <!--
-        HOW TO EDIT: each topic is one <div class="col-md-6 col-xl-4"> ... </div> block
-        (icon, title, and a short list of keywords). Copy, edit or delete blocks freely.
-        To show a figure, add  <img src="assets/img/your-figure.png" class="img-fluid" alt="">
-        right after the closing </div> of the "row".
+        HOW TO EDIT
+        - Figure: replace assets/img/research-overview.webp with a new file of the same name,
+          or change the file name in the <img> line below.
+        - Directions: each one is a <div class="direction-card ..."> block (icon, title, short list).
       -->
       <div class="tab-pane fade show active" id="rs-interests" role="tabpanel" aria-labelledby="rs-interests-tab">
-        <div class="row g-3">
+        <div class="row g-4 align-items-center">
 
-          <div class="col-md-6 col-xl-4">
-            <div class="topic-card">
-              <i class="bi bi-broadcast"></i>
-              <h4>Optical Wireless Networks for Internet from Space</h4>
-              <ul>
-                <li>Space-air-ground integrated networks (satellite, HAP, UAV)</li>
-                <li>Mixed FSO/RF and hybrid FSO/sub-THz systems</li>
-                <li>Network protocol design and cross-layer optimization</li>
-              </ul>
-            </div>
+          <!-- Overview figure: half of the width -->
+          <div class="col-lg-6">
+            <figure class="research-figure">
+              <a href="assets/img/research-overview.webp" target="_blank" title="Open the figure in full size">
+                <img src="assets/img/research-overview.webp" class="img-fluid" alt="Quantum AI-enabled optical wireless network: LEO satellites, a HAP, UAVs, a base station, a ground station, an optical IRS, a data center and a vessel connected by FSO, RF, QKD and underwater optical links, with a Quantum AI network control layer for sensing, prediction, optimization and security.">
+              </a>
+            </figure>
           </div>
 
-          <div class="col-md-6 col-xl-4">
-            <div class="topic-card">
-              <i class="bi bi-shield-lock"></i>
-              <h4>Quantum Key Distribution</h4>
-              <ul>
-                <li>Satellite- and UAV-based FSO/QKD systems</li>
-                <li>Key reconciliation and error estimation</li>
-                <li>Entanglement-based QKD and satellite selection</li>
-              </ul>
-            </div>
-          </div>
+          <!-- Research directions: half of the width -->
+          <div class="col-lg-6">
+            <div class="research-directions">
 
-          <div class="col-md-6 col-xl-4">
-            <div class="topic-card">
-              <i class="bi bi-cpu"></i>
-              <h4>AI/ML for Non-Terrestrial Networks</h4>
-              <ul>
-                <li>Multi-agent deep reinforcement learning for UAV deployment</li>
-                <li>Quantum-inspired and LLM-assisted DRL</li>
-                <li>Joint placement, handover and power allocation</li>
-              </ul>
-            </div>
-          </div>
+              <div class="direction-card is-blue">
+                <h4><i class="bi bi-broadcast"></i>1. Optical Wireless and Non-Terrestrial Networks</h4>
+                <ul>
+                  <li>Space-air-ground-sea integrated networks (satellite, HAP, UAV, maritime)</li>
+                  <li>FSO/RF and FSO/sub-THz hybrid communications</li>
+                  <li>Optical intelligent reflecting surfaces (IRS) and relaying</li>
+                </ul>
+              </div>
 
-          <div class="col-md-6 col-xl-4">
-            <div class="topic-card">
-              <i class="bi bi-diagram-3"></i>
-              <h4>Intelligent Reflecting Surfaces and Relaying</h4>
-              <ul>
-                <li>Optical IRS-aided aerial networks</li>
-                <li>Integrated access and backhaul</li>
-                <li>Channel modeling under turbulence and clouds</li>
-              </ul>
-            </div>
-          </div>
+              <div class="direction-card is-purple">
+                <h4><i class="bi bi-shield-lock"></i>2. Quantum AI for Secure and Intelligent Communications</h4>
+                <ul>
+                  <li>Quantum key distribution (QKD) and entanglement-based links</li>
+                  <li>Quantum machine learning and quantum-enhanced DRL</li>
+                  <li>Federated/quantum DRL for resource and network optimization</li>
+                </ul>
+              </div>
 
-          <div class="col-md-6 col-xl-4">
-            <div class="topic-card">
-              <i class="bi bi-bullseye"></i>
-              <h4>Integrated Sensing and Communications</h4>
-              <ul>
-                <li>Sensing-aided FSO beam tracking</li>
-                <li>Sensing, communications and computing for optical wireless networks</li>
-                <li>Sensing-assisted QKD for secure IoV</li>
-              </ul>
-            </div>
-          </div>
+              <div class="direction-card is-green">
+                <h4><i class="bi bi-bullseye"></i>3. AI-Driven Sensing and ISAC</h4>
+                <ul>
+                  <li>Sensing-assisted beam tracking and predictive control</li>
+                  <li>Multi-agent DRL for deployment, resource allocation and handover</li>
+                  <li>Integrated sensing, communications and computing</li>
+                </ul>
+              </div>
 
-          <div class="col-md-6 col-xl-4">
-            <div class="topic-card">
-              <i class="bi bi-arrow-repeat"></i>
-              <h4>Error Control and Reliability</h4>
-              <ul>
-                <li>HARQ, LDPC and network coding designs</li>
-                <li>Channel prediction-driven adaptation</li>
-                <li>Link adaptation over optical satellite links</li>
-              </ul>
             </div>
           </div>
 
@@ -158,33 +129,61 @@
 
       <!-- ================= Research Funding ================= -->
       <!--
-        HOW TO ADD A GRANT: copy one <div class="funding-item"> ... </div> block
-        and put it at the top. Add <span class="badge bg-danger ms-2">New</span>
-        after the title to flag it as new.
+        HOW TO UPDATE
+        - New grant: copy one <div class="funding-item"> ... </div> block into "Active".
+        - Finished grant: move its block from "Active" down to "Completed".
       -->
       <div class="tab-pane fade" id="rs-funding" role="tabpanel" aria-labelledby="rs-funding-tab">
+
+        <h3 class="funding-group"><i class="bi bi-play-circle"></i>Active</h3>
 
         <div class="funding-item">
           <div class="funding-years">2025–2027</div>
           <div>
-            <p class="funding-title">"AI-Empowered Mixed Optical/RF-based Non-Terrestrial Networks" <span class="badge bg-danger ms-2">New</span></p>
-            <p class="funding-meta">Sponsor: The Telecommunications Advancement Foundation (TAF) · Principal Investigator (PI)</p>
+            <p class="funding-title">"AI-Empowered Mixed Optical/RF-based Non-Terrestrial Networks"</p>
+            <p class="funding-meta">Sponsor: Telecommunications Advancement Foundation (TAF) · Role: PI</p>
           </div>
         </div>
 
         <div class="funding-item">
+          <div class="funding-years">2025–2028</div>
+          <div>
+            <p class="funding-title">"Mixed FSO/RF Non-Terrestrial Networks toward 6G: Reliable and Intelligent Connectivity"</p>
+            <p class="funding-meta">Sponsor: National Foundation for Science and Technology Development (NAFOSTED) · Role: Co-PI</p>
+          </div>
+        </div>
+
+        <h3 class="funding-group"><i class="bi bi-check-circle"></i>Completed</h3>
+
+        <div class="funding-item is-completed">
+          <div class="funding-years">2025–2026</div>
+          <div>
+            <p class="funding-title">"Resource Allocation for Optical Intelligent Reflecting Surface-based Non-Terrestrial Networks"</p>
+            <p class="funding-meta">Sponsor: UoA Competitive Funding, Grant P-11 · Role: PI</p>
+          </div>
+        </div>
+
+        <div class="funding-item is-completed">
           <div class="funding-years">2023–2025</div>
           <div>
             <p class="funding-title">"Development of Novel Error-Control Solutions for Optical Aerospace Integrated Networks"</p>
-            <p class="funding-meta">JSPS KAKENHI Research Activity Start-up, Grant #23K19124 · Principal Investigator (PI)</p>
+            <p class="funding-meta">Sponsor: JSPS KAKENHI Research Activity Start-up, Grant 23K19124 · Role: PI</p>
           </div>
         </div>
 
-        <div class="funding-item">
-          <div class="funding-years">2023–2024<br>2024–2025</div>
+        <div class="funding-item is-completed">
+          <div class="funding-years">2024–2025</div>
           <div>
-            <p class="funding-title">"Research Projects"</p>
-            <p class="funding-meta">UoA Competitive Fundings · Principal Investigator (PI)</p>
+            <p class="funding-title">"Efficient Information Reconciliation for Satellite-Assisted Quantum Key Distribution"</p>
+            <p class="funding-meta">Sponsor: UoA Competitive Funding, Grant P-16 · Role: PI</p>
+          </div>
+        </div>
+
+        <div class="funding-item is-completed">
+          <div class="funding-years">2023–2024</div>
+          <div>
+            <p class="funding-title">"Towards Reliable Optical Wireless Communications in Aerospace Integrated Networks"</p>
+            <p class="funding-meta">Sponsor: UoA Competitive Funding, Grant P-16 · Role: PI</p>
           </div>
         </div>
 
