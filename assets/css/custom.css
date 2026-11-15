@@ -1,55 +1,124 @@
 /*--------------------------------------------------------------
 # custom.css — styles added for the split-page version of the site.
 # Loaded after style.css and Bootstrap, so rules here win.
+#
+# Main colors:  #173b6c dark blue (headings)   #149ddd accent blue
+#               #e3e9f2 card border            #f5f8fd light background
 --------------------------------------------------------------*/
 
-/* Inner pages have no hero, so start a little closer to the top */
 .page-inner section:first-child {
   padding-top: 40px;
 }
 
-/*--------------------------------------------------------------
-# Shared underline tabs (Research, Publication, Supervision)
---------------------------------------------------------------*/
-.page-tabs {
-  border-bottom: 1px solid #dde3ec;
-  margin-bottom: 28px;
-  gap: 4px 28px;
+#main a {
+  text-decoration: none;
 }
 
-.page-tabs .nav-link {
-  background: none;
+#main a:hover {
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# Sidebar: title under the name
+--------------------------------------------------------------*/
+#header .profile .profile-title {
+  margin: 6px 0 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#header .profile .profile-title a {
+  color: #8fd0f2;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Tabs — one look for every page (News, Supervision, Research,
+# Publication, Service)
+--------------------------------------------------------------*/
+.nav-pills.page-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 0 0 26px;
+  padding: 6px;
+  background: #f1f5fb;
+  border: 1px solid #e3e9f2;
+  border-radius: 14px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.nav-pills.page-tabs .nav-item {
+  margin: 0;
+}
+
+.nav-pills.page-tabs .nav-link,
+.services .nav-pills.page-tabs .nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 9px 16px;
+  background: transparent;
   border: 0;
-  border-bottom: 3px solid transparent;
-  border-radius: 0;
-  padding: 10px 0;
-  margin-bottom: -1px;
+  border-radius: 10px;
+  box-shadow: none;
+  transform: none;
+  color: #40536e;
   font-size: 15px;
   font-weight: 600;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-  color: #173b6c;
+  line-height: 1.2;
+  text-transform: none;
+  letter-spacing: 0;
   cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
-.page-tabs .nav-link:hover {
+.nav-pills.page-tabs .nav-link i,
+.services .nav-pills.page-tabs .nav-link i {
+  margin: 0;
+  font-size: 16px;
   color: #149ddd;
+  transform: none;
 }
 
-.page-tabs .nav-link.active {
-  background: none;
-  color: #149ddd;
-  border-bottom-color: #149ddd;
+.services .nav-pills.page-tabs .nav-link span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.nav-pills.page-tabs .nav-link:hover,
+.services .nav-pills.page-tabs .nav-link:hover {
+  background: #e2ecf8;
+  border: 0;
+  color: #173b6c;
+  transform: none;
+}
+
+.nav-pills.page-tabs .nav-link.active,
+.services .nav-pills.page-tabs .nav-link.active {
+  background: #fff;
+  border: 0;
+  color: #0b6fa0;
+  box-shadow: 0 2px 8px rgba(23, 59, 108, 0.14);
+  transform: none;
+}
+
+.nav-pills.page-tabs .nav-link.active i,
+.services .nav-pills.page-tabs .nav-link.active i,
+.services .nav-pills.page-tabs .nav-link.active span {
+  color: inherit;
 }
 
 .page-tabs .tab-count {
-  display: inline-block;
   min-width: 22px;
-  padding: 1px 7px;
-  margin-left: 6px;
+  padding: 2px 7px;
   border-radius: 11px;
-  background: #e8eef7;
-  color: #173b6c;
+  background: #dfe8f4;
+  color: #40536e;
   font-size: 12px;
   font-weight: 700;
   text-align: center;
@@ -58,241 +127,6 @@
 .page-tabs .nav-link.active .tab-count {
   background: #149ddd;
   color: #fff;
-}
-
-/*--------------------------------------------------------------
-# Supervision — compact student cards
---------------------------------------------------------------*/
-.students .section-title p {
-  max-width: 820px;
-}
-
-.student-card {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  height: 100%;
-  padding: 12px 14px;
-  background: #fff;
-  border: 1px solid #e3e9f2;
-  border-left: 4px solid #149ddd;
-  border-radius: 8px;
-}
-
-.student-card .student-photo {
-  position: relative;
-  flex: 0 0 56px;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #e8eef7;
-  color: #173b6c;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 56px;
-  text-align: center;
-}
-
-.student-card .student-photo img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.student-card .student-body {
-  flex: 1;
-  min-width: 0;
-}
-
-.student-card .student-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 4px 10px;
-  margin-bottom: 6px;
-}
-
-.student-card .student-name {
-  font-size: 16px;
-  font-weight: 700;
-  color: #173b6c;
-}
-
-.student-card .student-degree {
-  padding: 1px 8px;
-  border-radius: 10px;
-  background: #e8f5fc;
-  color: #0b6fa0;
-  font-size: 12px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-.student-card .student-period {
-  margin-left: auto;
-  font-size: 13px;
-  color: #6b7a90;
-  white-space: nowrap;
-}
-
-.student-card .student-topic {
-  margin: 0;
-  font-size: 14.5px;
-  line-height: 1.45;
-  color: #2f3b4c;
-}
-
-.student-card .student-awards {
-  margin: 8px 0 0;
-  padding-top: 8px;
-  border-top: 1px dashed #dde3ec;
-  font-size: 13px;
-  line-height: 1.45;
-  color: #7a5a00;
-}
-
-.student-card .student-awards i {
-  margin-right: 4px;
-  color: #d99a00;
-}
-
-.student-card.is-alumni {
-  border-left-color: #8a97aa;
-}
-
-/*--------------------------------------------------------------
-# Research — interests + funding
---------------------------------------------------------------*/
-.research .interest-list {
-  padding-left: 20px;
-}
-
-.research .interest-list > li {
-  margin-bottom: 14px;
-}
-
-.research .interest-list ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 4px 0 0;
-}
-
-.funding-item {
-  display: flex;
-  gap: 18px;
-  padding: 16px 18px;
-  margin-bottom: 14px;
-  background: #fff;
-  border: 1px solid #e3e9f2;
-  border-left: 4px solid #149ddd;
-  border-radius: 8px;
-}
-
-.funding-item .funding-years {
-  flex: 0 0 96px;
-  font-weight: 700;
-  color: #173b6c;
-}
-
-.funding-item .funding-title {
-  margin: 0 0 4px;
-  font-size: 16px;
-  font-weight: 600;
-  font-style: italic;
-  color: #173b6c;
-}
-
-.funding-item .funding-meta {
-  margin: 0;
-  font-size: 14.5px;
-  color: #4a5668;
-}
-
-@media (max-width: 575px) {
-  .funding-item {
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .funding-item .funding-years {
-    flex-basis: auto;
-  }
-}
-
-/*--------------------------------------------------------------
-# Publication list
---------------------------------------------------------------*/
-.publication .tab-pane p {
-  margin-bottom: 12px;
-  line-height: 1.55;
-}
-
-/*--------------------------------------------------------------
-# News (home page)
---------------------------------------------------------------*/
-.news-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.news-list li {
-  display: flex;
-  gap: 18px;
-  padding: 12px 0;
-  border-bottom: 1px solid #e3e9f2;
-}
-
-.news-list li:last-child {
-  border-bottom: 0;
-}
-
-.news-list .news-date {
-  flex: 0 0 52px;
-  font-weight: 700;
-  color: #149ddd;
-  white-space: nowrap;
-}
-
-.news-list .news-text {
-  flex: 1;
-}
-
-@media (max-width: 575px) {
-  .news-list li {
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .news-list .news-date {
-    flex-basis: auto;
-  }
-}
-
-.news-year {
-  margin-bottom: 14px;
-  background: #fff;
-  border: 1px solid #e3e9f2;
-  border-radius: 8px;
-}
-
-.news-year summary {
-  padding: 12px 18px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #173b6c;
-  cursor: pointer;
-}
-
-.news-year[open] summary {
-  border-bottom: 1px solid #e3e9f2;
-}
-
-.news-year .news-list {
-  padding: 4px 18px 6px;
 }
 
 /*--------------------------------------------------------------
@@ -388,19 +222,24 @@
   gap: 8px;
 }
 
-.profile-card .profile-links a {
+.profile-card .profile-links a,
+.profile-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   padding: 6px 14px;
   border: 1px solid #149ddd;
   border-radius: 6px;
   color: #149ddd;
   font-size: 14px;
   font-weight: 600;
-  text-decoration: none;
 }
 
-.profile-card .profile-links a:hover {
+#main .profile-card .profile-links a:hover,
+#main .profile-more:hover {
   background: #149ddd;
   color: #fff;
+  text-decoration: none;
 }
 
 .profile-bio {
@@ -414,8 +253,14 @@
 }
 
 .profile-bio p {
-  margin: 0;
+  margin: 0 0 18px;
   line-height: 1.7;
+}
+
+.profile-more {
+  margin: 0 6px 6px 0;
+  border-color: #cfd9e8;
+  color: #173b6c;
 }
 
 @media (max-width: 575px) {
@@ -434,8 +279,408 @@
 }
 
 /*--------------------------------------------------------------
-# Publication — short list + "Show full list" button (see custom.js)
+# News
 --------------------------------------------------------------*/
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 18px;
+  background: #fff;
+  border: 1px solid #e3e9f2;
+  border-radius: 10px;
+}
+
+.news-list li {
+  display: flex;
+  gap: 18px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e3e9f2;
+}
+
+.news-list li:last-child {
+  border-bottom: 0;
+}
+
+.news-list .news-date {
+  flex: 0 0 56px;
+  font-weight: 700;
+  color: #149ddd;
+  white-space: nowrap;
+}
+
+.news-list .news-text {
+  flex: 1;
+  min-width: 0;
+  line-height: 1.6;
+}
+
+.news-list .news-photo {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin-top: 10px;
+  border: 1px solid #e3e9f2;
+  border-radius: 8px;
+}
+
+@media (max-width: 575px) {
+  .news-list li {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .news-list .news-date {
+    flex-basis: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# Teaching — course cards
+--------------------------------------------------------------*/
+.course-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #173b6c;
+}
+
+.course-group i {
+  color: #149ddd;
+}
+
+.course-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #e3e9f2;
+  border-left: 4px solid #149ddd;
+  border-radius: 8px;
+}
+
+.course-card .course-code {
+  flex: 0 0 76px;
+  padding: 4px 0;
+  border-radius: 6px;
+  background: #e8f5fc;
+  color: #0b6fa0;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.course-card .course-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.course-card h4 {
+  margin: 0 0 2px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #173b6c;
+}
+
+.course-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #5a6880;
+}
+
+.course-card .course-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 3px 10px;
+  border: 1px solid #149ddd;
+  border-radius: 6px;
+  color: #149ddd;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#main .course-card .course-link:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+.course-card.is-past {
+  border-left-color: #a9b4c4;
+}
+
+.course-card.is-past .course-code {
+  background: #eef1f5;
+  color: #5a6880;
+}
+
+/*--------------------------------------------------------------
+# Supervision — student cards with photo
+--------------------------------------------------------------*/
+.students .section-title p {
+  max-width: 820px;
+}
+
+.student-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  height: 100%;
+  padding: 12px 14px;
+  background: #fff;
+  border: 1px solid #e3e9f2;
+  border-left: 4px solid #149ddd;
+  border-radius: 8px;
+}
+
+.student-card .student-photo {
+  position: relative;
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e8eef7;
+  color: #173b6c;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 64px;
+  text-align: center;
+}
+
+.student-card .student-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.student-card .student-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.student-card .student-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin-bottom: 6px;
+}
+
+.student-card .student-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #173b6c;
+}
+
+.student-card .student-degree {
+  padding: 1px 8px;
+  border-radius: 10px;
+  background: #e8f5fc;
+  color: #0b6fa0;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.student-card .student-period {
+  margin-left: auto;
+  font-size: 13px;
+  color: #6b7a90;
+  white-space: nowrap;
+}
+
+.student-card .student-topic {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: #2f3b4c;
+}
+
+.student-card .student-awards {
+  margin: 8px 0 0;
+  padding-top: 8px;
+  border-top: 1px dashed #dde3ec;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #7a5a00;
+}
+
+.student-card .student-awards i {
+  margin-right: 4px;
+  color: #d99a00;
+}
+
+.student-card.is-alumni {
+  border-left-color: #a9b4c4;
+}
+
+/*--------------------------------------------------------------
+# Research — topic cards + funding
+--------------------------------------------------------------*/
+.topic-card {
+  height: 100%;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #e3e9f2;
+  border-radius: 10px;
+}
+
+.topic-card > i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background: #e8f5fc;
+  color: #149ddd;
+  font-size: 20px;
+}
+
+.topic-card h4 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #173b6c;
+}
+
+.topic-card ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: #40536e;
+}
+
+.topic-card li + li {
+  margin-top: 3px;
+}
+
+.funding-item {
+  display: flex;
+  gap: 18px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  background: #fff;
+  border: 1px solid #e3e9f2;
+  border-left: 4px solid #149ddd;
+  border-radius: 8px;
+}
+
+.funding-item .funding-years {
+  flex: 0 0 96px;
+  font-weight: 700;
+  color: #173b6c;
+}
+
+.funding-item .funding-title {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  color: #173b6c;
+}
+
+.funding-item .funding-meta {
+  margin: 0;
+  font-size: 14.5px;
+  color: #4a5668;
+}
+
+@media (max-width: 575px) {
+  .funding-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .funding-item .funding-years {
+    flex-basis: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# Publication — entries, link buttons, "Show full list" (custom.js)
+--------------------------------------------------------------*/
+.publication .pub-notice {
+  padding: 10px 14px;
+  border-left: 3px solid #d9534f;
+  border-radius: 4px;
+  background: #fdf3f2;
+  color: #8a2f2b;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.publication .tab-pane > p {
+  position: relative;
+  margin: 0;
+  padding: 12px 0 12px 58px;
+  border-bottom: 1px solid #e9eef5;
+  line-height: 1.6;
+}
+
+.publication .pub-id {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 46px;
+  padding: 1px 0;
+  border-radius: 6px;
+  background: #e8eef7;
+  color: #173b6c;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.publication .pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 2px 2px 2px 4px;
+  padding: 1px 9px;
+  border: 1px solid #b9d9ec;
+  border-radius: 6px;
+  background: #f3fafe;
+  color: #0b6fa0;
+  font-size: 12.5px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.6;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+#main .publication .pub-link:hover {
+  background: #149ddd;
+  border-color: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+.publication .pub-link-pdf {
+  border-color: #efc4c1;
+  background: #fef6f5;
+  color: #b3382f;
+}
+
+#main .publication .pub-link-pdf:hover {
+  background: #c9443a;
+  border-color: #c9443a;
+}
+
 .publication .tab-pane .pub-extra {
   display: none;
 }
@@ -447,7 +692,7 @@
 .pub-toggle {
   display: block;
   width: 100%;
-  margin-top: 8px;
+  margin-top: 14px;
   padding: 10px;
   border: 1px dashed #149ddd;
   border-radius: 8px;
@@ -461,4 +706,77 @@
 .pub-toggle:hover {
   background: #149ddd;
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Service — same look as the other pages
+--------------------------------------------------------------*/
+.services {
+  background: #fff;
+}
+
+.services .section-title h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #173b6c;
+}
+
+.services .tab-content {
+  margin-top: 0;
+}
+
+.services .tab-pane h3 {
+  margin: 22px 0 10px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #173b6c;
+}
+
+.services .tab-pane h3:first-child {
+  margin-top: 0;
+}
+
+.services .tab-pane .list-group {
+  margin-bottom: 0;
+  padding: 0 16px;
+  background: #fff;
+  border: 1px solid #e3e9f2;
+  border-radius: 10px;
+}
+
+.services .tab-pane .list-group-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0;
+  padding: 11px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #e9eef5;
+  border-radius: 0;
+  box-shadow: none;
+  transform: none;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.services .tab-pane .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+.services .tab-pane .list-group-item:hover {
+  background: transparent;
+  transform: none;
+  box-shadow: none;
+}
+
+.services .tab-pane .list-group-item i {
+  margin: 3px 0 0;
+  font-size: 15px;
+  color: #149ddd;
+}
+
+.services .tab-pane a {
+  color: #0b6fa0;
 }
