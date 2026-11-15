@@ -1,0 +1,464 @@
+/*--------------------------------------------------------------
+# custom.css — styles added for the split-page version of the site.
+# Loaded after style.css and Bootstrap, so rules here win.
+--------------------------------------------------------------*/
+
+/* Inner pages have no hero, so start a little closer to the top */
+.page-inner section:first-child {
+  padding-top: 40px;
+}
+
+/*--------------------------------------------------------------
+# Shared underline tabs (Research, Publication, Supervision)
+--------------------------------------------------------------*/
+.page-tabs {
+  border-bottom: 1px solid #dde3ec;
+  margin-bottom: 28px;
+  gap: 4px 28px;
+}
+
+.page-tabs .nav-link {
+  background: none;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  padding: 10px 0;
+  margin-bottom: -1px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #173b6c;
+  cursor: pointer;
+}
+
+.page-tabs .nav-link:hover {
+  color: #149ddd;
+}
+
+.page-tabs .nav-link.active {
+  background: none;
+  color: #149ddd;
+  border-bottom-color: #149ddd;
+}
+
+.page-tabs .tab-count {
+  display: inline-block;
+  min-width: 22px;
+  padding: 1px 7px;
+  margin-left: 6px;
+  border-radius: 11px;
+  background: #e8eef7;
+  color: #173b6c;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.page-tabs .nav-link.active .tab-count {
+  background: #149ddd;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Supervision — compact student cards
+--------------------------------------------------------------*/
+.students .section-title p {
+  max-width: 820px;
+}
+
+.student-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  height: 100%;
+  padding: 12px 14px;
+  background: #fff;
+  border: 1px solid #e3e9f2;
+  border-left: 4px solid #149ddd;
+  border-radius: 8px;
+}
+
+.student-card .student-photo {
+  position: relative;
+  flex: 0 0 56px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e8eef7;
+  color: #173b6c;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: center;
+}
+
+.student-card .student-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.student-card .student-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.student-card .student-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin-bottom: 6px;
+}
+
+.student-card .student-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #173b6c;
+}
+
+.student-card .student-degree {
+  padding: 1px 8px;
+  border-radius: 10px;
+  background: #e8f5fc;
+  color: #0b6fa0;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.student-card .student-period {
+  margin-left: auto;
+  font-size: 13px;
+  color: #6b7a90;
+  white-space: nowrap;
+}
+
+.student-card .student-topic {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: #2f3b4c;
+}
+
+.student-card .student-awards {
+  margin: 8px 0 0;
+  padding-top: 8px;
+  border-top: 1px dashed #dde3ec;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #7a5a00;
+}
+
+.student-card .student-awards i {
+  margin-right: 4px;
+  color: #d99a00;
+}
+
+.student-card.is-alumni {
+  border-left-color: #8a97aa;
+}
+
+/*--------------------------------------------------------------
+# Research — interests + funding
+--------------------------------------------------------------*/
+.research .interest-list {
+  padding-left: 20px;
+}
+
+.research .interest-list > li {
+  margin-bottom: 14px;
+}
+
+.research .interest-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 4px 0 0;
+}
+
+.funding-item {
+  display: flex;
+  gap: 18px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+  background: #fff;
+  border: 1px solid #e3e9f2;
+  border-left: 4px solid #149ddd;
+  border-radius: 8px;
+}
+
+.funding-item .funding-years {
+  flex: 0 0 96px;
+  font-weight: 700;
+  color: #173b6c;
+}
+
+.funding-item .funding-title {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  color: #173b6c;
+}
+
+.funding-item .funding-meta {
+  margin: 0;
+  font-size: 14.5px;
+  color: #4a5668;
+}
+
+@media (max-width: 575px) {
+  .funding-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .funding-item .funding-years {
+    flex-basis: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# Publication list
+--------------------------------------------------------------*/
+.publication .tab-pane p {
+  margin-bottom: 12px;
+  line-height: 1.55;
+}
+
+/*--------------------------------------------------------------
+# News (home page)
+--------------------------------------------------------------*/
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list li {
+  display: flex;
+  gap: 18px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e3e9f2;
+}
+
+.news-list li:last-child {
+  border-bottom: 0;
+}
+
+.news-list .news-date {
+  flex: 0 0 52px;
+  font-weight: 700;
+  color: #149ddd;
+  white-space: nowrap;
+}
+
+.news-list .news-text {
+  flex: 1;
+}
+
+@media (max-width: 575px) {
+  .news-list li {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .news-list .news-date {
+    flex-basis: auto;
+  }
+}
+
+.news-year {
+  margin-bottom: 14px;
+  background: #fff;
+  border: 1px solid #e3e9f2;
+  border-radius: 8px;
+}
+
+.news-year summary {
+  padding: 12px 18px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #173b6c;
+  cursor: pointer;
+}
+
+.news-year[open] summary {
+  border-bottom: 1px solid #e3e9f2;
+}
+
+.news-year .news-list {
+  padding: 4px 18px 6px;
+}
+
+/*--------------------------------------------------------------
+# Home — profile card
+--------------------------------------------------------------*/
+.home-profile {
+  background: linear-gradient(160deg, #f5f8fd 0%, #ffffff 60%);
+}
+
+.profile-card {
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #e3e9f2;
+  border-top: 4px solid #149ddd;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(23, 59, 108, 0.08);
+}
+
+.profile-card .profile-photo {
+  width: 220px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #e8eef7;
+  background: #e8eef7;
+}
+
+.profile-card .profile-hello {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: #149ddd;
+  font-weight: 600;
+}
+
+.profile-card .profile-name {
+  margin: 0 0 8px;
+  font-size: 34px;
+  font-weight: 700;
+  color: #173b6c;
+}
+
+.profile-card .profile-name span {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #6b7a90;
+}
+
+.profile-card .profile-role {
+  margin: 0 0 14px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2f3b4c;
+}
+
+.profile-card .profile-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.profile-card .profile-chips span {
+  padding: 4px 12px;
+  border-radius: 16px;
+  background: #e8f5fc;
+  color: #0b6fa0;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.profile-card .profile-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 6px 20px;
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+  font-size: 15px;
+  color: #2f3b4c;
+}
+
+.profile-card .profile-facts i {
+  margin-right: 8px;
+  color: #149ddd;
+}
+
+.profile-card .profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.profile-card .profile-links a {
+  padding: 6px 14px;
+  border: 1px solid #149ddd;
+  border-radius: 6px;
+  color: #149ddd;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.profile-card .profile-links a:hover {
+  background: #149ddd;
+  color: #fff;
+}
+
+.profile-bio {
+  margin-top: 28px;
+}
+
+.profile-bio h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #173b6c;
+}
+
+.profile-bio p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+@media (max-width: 575px) {
+  .profile-card {
+    padding: 20px;
+  }
+
+  .profile-card .profile-name {
+    font-size: 26px;
+  }
+
+  .profile-card .profile-name span {
+    display: block;
+    margin: 2px 0 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Publication — short list + "Show full list" button (see custom.js)
+--------------------------------------------------------------*/
+.publication .tab-pane .pub-extra {
+  display: none;
+}
+
+.publication .tab-pane.pub-open .pub-extra {
+  display: block;
+}
+
+.pub-toggle {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border: 1px dashed #149ddd;
+  border-radius: 8px;
+  background: #f5fbfe;
+  color: #149ddd;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pub-toggle:hover {
+  background: #149ddd;
+  color: #fff;
+}
