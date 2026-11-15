@@ -51,90 +51,116 @@
 
   <main id="main">
 
-    <!-- =============================================================== Teaching =================================== -->
-<section id="teaching" class="teaching">
-<div class="container">
-	<div class="section-title">
-	<h2>Teaching/教育</h2>
-	<p class="text-danger">The following is a list of my courses at the University of Aizu. The course materials are available on <a href="https://elms.u-aizu.ac.jp/login/index.php"> <u>Moodle</u></a> as well as my shared folders.</p>
+<section id="teaching" class="teaching-page">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Teaching/教育</h2>
+      <p>The following is a list of my courses at the University of Aizu. The course materials are available on
+        <a href="https://elms.u-aizu.ac.jp/login/index.php">Moodle</a> as well as my shared folders.</p>
+    </div>
+
+    <!--
+      HOW TO ADD A COURSE: copy one <div class="course-card"> ... </div> block.
+      - Add the class "is-past" (class="course-card is-past") for a course no longer taught.
+      - The "course-link" line is optional (course materials).
+    -->
+    <div class="row g-4">
+
+      <!-- ================= Graduate ================= -->
+      <div class="col-lg-6">
+        <h3 class="course-group"><i class="bi bi-mortarboard"></i>Graduate Courses</h3>
+
+        <div class="course-card">
+          <span class="course-code">CNC05A</span>
+          <div class="course-body">
+            <h4>Wireless and Mobile Networks</h4>
+            <p>Master Course · Quarter 4 · AY2024 – Present</p>
+          </div>
         </div>
 
-	<div class="row">
-		<div class="col-lg-6" data-aos="fade-right">	
-            	<h3 class="teaching-title">Graduate Courses</h3>
-            		<div class="teaching-item-active">
-              		<h4>CNC05A: Wireless and Mobile Networks</h4>
-				<ul>
-                		<li>Master Course, Quarter 4 (AY2024 - Present)</li>
-              			</ul>  
-			</div>
-			<div class="teaching-item-active">
-              		<h4>CNC06A: Performance Evaluation of Network Systems</h4>
-				<ul>
-                		<li>Master Course, Quarter 4 (AY2024 - Present)</li>
-              			</ul>  
-			</div>
-			<div class="teaching-item-active">
-			<h4>CNC01F: Computer Communications and Networking</h4>
-              			<ul>
-                		<li>Master Course, Quarter 3 (AY2023 - Present)</li>
-              			</ul>
-			</div>
-			<div class="teaching-item-stop">	
-			<h4>CNA07: Optical Communications and Networks</h4>
-              			<ul>
-                		<li>Master Course, Quarter 2 (AY2024 - Present)</li>
-              			</ul>
-            		</div>
-			
-		</div>
+        <div class="course-card">
+          <span class="course-code">CNC06A</span>
+          <div class="course-body">
+            <h4>Performance Evaluation of Network Systems</h4>
+            <p>Master Course · Quarter 4 · AY2024 – Present</p>
+          </div>
+        </div>
 
-		<div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
-            	<h3 class="teaching-title">Undergraduate Courses</h3>
-            		<div class="teaching-item-active">
-              		<h4>FU14: Introduction to Software Engineering</h4>
-				<ul>
-                		<li>Lab Exercise, Quarter 1 (AY2023 - Present)</li>
-              			</ul>  
-				<a href="https://drive.google.com/drive/folders/1875bOeeXbwmMbaewPha1NQWLcVC5RATY?usp=sharing"> <h5>Download Course Materials</h5> </a>
-            		</div>
-			<div class="teaching-item-active">
-              		<h4>IE01: Integrated Exercise for Systems I (ICTG Class)</h4>
-				<ul>
-                		<li>Lab Exercise, Semester 1 (AY2023 - Present)</li>
-              			</ul>  
-            		</div>
-			<div class="teaching-item-active">
-              		<h4>LI11: Introduction to Computer Networking (ICTG Class)</h4>
-				<ul>
-                		<li>Lecture, Quarter 3 (AY2023 - Present)</li>
-              			</ul>  
-            		</div>
-			<div class="teaching-item-active">
-              		<h4>FU02: Information Theory and Data Compression</h4>
-				<ul>
-                		<li>Lab Exercise, Quarter 3 (AY2023 - Present)</li>
-              			</ul>  
-            		</div>
-			<div class="teaching-item-active">
-              		<h4>CN05: Computer and Network System Modeling and Simulation</h4>
-				<ul>
-                		<li>Lecture, Quarter 4 (AY2024 - Present)</li>
-              			</ul>  
-            		</div>
-			<div class="teaching-item-stop">
-              		<h4>FU01: Algorithms and Data Structures I</h4>
-				<ul>
-                		<li>Lab Exercise, Quarter 4 (AY2023)</li>
-              			</ul>  
+        <div class="course-card">
+          <span class="course-code">CNC01F</span>
+          <div class="course-body">
+            <h4>Computer Communications and Networking</h4>
+            <p>Master Course · Quarter 3 · AY2023 – Present</p>
+          </div>
+        </div>
 
-		</div>
-		
-	</div>
+        <div class="course-card is-past">
+          <span class="course-code">CNA07</span>
+          <div class="course-body">
+            <h4>Optical Communications and Networks</h4>
+            <p>Master Course · Quarter 2 · AY2024 – Present</p>
+          </div>
+        </div>
+      </div>
 
-</div>
-</div>
-</section><!-- End Teaching Section -->
+      <!-- ================= Undergraduate ================= -->
+      <div class="col-lg-6">
+        <h3 class="course-group"><i class="bi bi-book"></i>Undergraduate Courses</h3>
+
+        <div class="course-card">
+          <span class="course-code">FU14</span>
+          <div class="course-body">
+            <h4>Introduction to Software Engineering</h4>
+            <p>Lab Exercise · Quarter 1 · AY2023 – Present</p>
+            <a class="course-link" href="https://drive.google.com/drive/folders/1875bOeeXbwmMbaewPha1NQWLcVC5RATY?usp=sharing" target="_blank"><i class="bi bi-download"></i>Course materials</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <span class="course-code">IE01</span>
+          <div class="course-body">
+            <h4>Integrated Exercise for Systems I (ICTG Class)</h4>
+            <p>Lab Exercise · Semester 1 · AY2023 – Present</p>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <span class="course-code">LI11</span>
+          <div class="course-body">
+            <h4>Introduction to Computer Networking (ICTG Class)</h4>
+            <p>Lecture · Quarter 3 · AY2023 – Present</p>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <span class="course-code">FU02</span>
+          <div class="course-body">
+            <h4>Information Theory and Data Compression</h4>
+            <p>Lab Exercise · Quarter 3 · AY2023 – Present</p>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <span class="course-code">CN05</span>
+          <div class="course-body">
+            <h4>Computer and Network System Modeling and Simulation</h4>
+            <p>Lecture · Quarter 4 · AY2024 – Present</p>
+          </div>
+        </div>
+
+        <div class="course-card is-past">
+          <span class="course-code">FU01</span>
+          <div class="course-body">
+            <h4>Algorithms and Data Structures I</h4>
+            <p>Lab Exercise · Quarter 4 · AY2023</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   </main><!-- End #main -->
 

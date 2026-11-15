@@ -52,7 +52,7 @@
   <main id="main">
 
 <section id="research" class="research">
-  <div class="container" data-aos="fade-up">
+  <div class="container">
 
     <div class="section-title">
       <h2>Research / 研究</h2>
@@ -62,55 +62,97 @@
     <!-- Tabs -->
     <ul class="nav nav-pills page-tabs" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="rs-interests-tab" data-bs-toggle="pill" data-bs-target="#rs-interests" type="button" role="tab" aria-controls="rs-interests" aria-selected="true">Research Interests</button>
+        <button class="nav-link active" id="rs-interests-tab" data-bs-toggle="pill" data-bs-target="#rs-interests" type="button" role="tab" aria-controls="rs-interests" aria-selected="true"><i class="bi bi-lightbulb"></i>Research Interests</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="rs-funding-tab" data-bs-toggle="pill" data-bs-target="#rs-funding" type="button" role="tab" aria-controls="rs-funding" aria-selected="false">Research Funding</button>
+        <button class="nav-link" id="rs-funding-tab" data-bs-toggle="pill" data-bs-target="#rs-funding" type="button" role="tab" aria-controls="rs-funding" aria-selected="false"><i class="bi bi-award"></i>Research Funding</button>
       </li>
     </ul>
 
     <div class="tab-content">
 
       <!-- ================= Research Interests ================= -->
+      <!--
+        HOW TO EDIT: each topic is one <div class="col-md-6 col-xl-4"> ... </div> block
+        (icon, title, and a short list of keywords). Copy, edit or delete blocks freely.
+        To show a figure, add  <img src="assets/img/your-figure.png" class="img-fluid" alt="">
+        right after the closing </div> of the "row".
+      -->
       <div class="tab-pane fade show active" id="rs-interests" role="tabpanel" aria-labelledby="rs-interests-tab">
-        <div class="row">
-          <div class="col-lg-6">
-            <img src="assets/img/research.png" class="img-fluid" alt="">
-            <img src="assets/img/network.png" class="img-fluid" alt="">
+        <div class="row g-3">
+
+          <div class="col-md-6 col-xl-4">
+            <div class="topic-card">
+              <i class="bi bi-broadcast"></i>
+              <h4>Optical Wireless Networks for Internet from Space</h4>
+              <ul>
+                <li>Space-air-ground integrated networks (satellite, HAP, UAV)</li>
+                <li>Mixed FSO/RF and hybrid FSO/sub-THz systems</li>
+                <li>Network protocol design and cross-layer optimization</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3>Research Interests</h3>
-            <ol class="interest-list">
-              <li>
-                <strong>Optical Wireless Networks for Internet from Space</strong>
-                <ul>
-                  <li>- Network Protocol Design</li>
-                  <li>- Cross-Layer Optimization</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Satellite/Airborne/Vehicular Communications</strong>
-                <ul>
-                  <li>- Channel Modeling</li>
-                  <li>- Cooperation, Hybrid FSO/THz, Adaptive Schemes, HARQ</li>
-                  <li>- Intelligent Reflecting Surfaces (IRS)</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Network Security</strong>
-                <ul>
-                  <li>- Quantum Key Distributions</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Artificial Intelligence/Machine Learning</strong>
-                <ul>
-                  <li>- Applications in Wireless Networks</li>
-                </ul>
-              </li>
-            </ol>
+          <div class="col-md-6 col-xl-4">
+            <div class="topic-card">
+              <i class="bi bi-shield-lock"></i>
+              <h4>Quantum Key Distribution</h4>
+              <ul>
+                <li>Satellite- and UAV-based FSO/QKD systems</li>
+                <li>Key reconciliation and error estimation</li>
+                <li>Entanglement-based QKD and satellite selection</li>
+              </ul>
+            </div>
           </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="topic-card">
+              <i class="bi bi-cpu"></i>
+              <h4>AI/ML for Non-Terrestrial Networks</h4>
+              <ul>
+                <li>Multi-agent deep reinforcement learning for UAV deployment</li>
+                <li>Quantum-inspired and LLM-assisted DRL</li>
+                <li>Joint placement, handover and power allocation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="topic-card">
+              <i class="bi bi-diagram-3"></i>
+              <h4>Intelligent Reflecting Surfaces and Relaying</h4>
+              <ul>
+                <li>Optical IRS-aided aerial networks</li>
+                <li>Integrated access and backhaul</li>
+                <li>Channel modeling under turbulence and clouds</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="topic-card">
+              <i class="bi bi-bullseye"></i>
+              <h4>Integrated Sensing and Communications</h4>
+              <ul>
+                <li>Sensing-aided FSO beam tracking</li>
+                <li>Sensing, communications and computing for optical wireless networks</li>
+                <li>Sensing-assisted QKD for secure IoV</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="topic-card">
+              <i class="bi bi-arrow-repeat"></i>
+              <h4>Error Control and Reliability</h4>
+              <ul>
+                <li>HARQ, LDPC and network coding designs</li>
+                <li>Channel prediction-driven adaptation</li>
+                <li>Link adaptation over optical satellite links</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
 
